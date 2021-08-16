@@ -109,18 +109,6 @@ const Preferences = ({
   const [activeSectionKey, setActiveSectionKey] = useState(getStaticGlobal('preferencesScrollTo') || 'general');
 
   const sections = {
-    licensing: {
-      Icon: CheckCircleIcon,
-      text: 'Licensing',
-      Component: SectionAccountLicensing,
-      hidden: isAppx() || (isMas() && appJson.registered),
-      subSections: {
-        licensing: {
-          text: 'Licensing',
-          Component: SectionAccountLicensing,
-        },
-      },
-    },
     general: {
       text: 'General',
       Icon: WidgetsIcon,
@@ -270,7 +258,6 @@ const Preferences = ({
       Icon: InfoIcon,
       subSections: {
         about: { text: 'About', Component: SectionAbout },
-        moreApps: { text: 'More Apps', Component: SectionMoreApps },
       },
     },
   };
