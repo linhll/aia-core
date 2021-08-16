@@ -14,7 +14,6 @@ import SvgIcon from '@material-ui/core/SvgIcon';
 
 import AssessmentIcon from '@material-ui/icons/Assessment';
 import CachedIcon from '@material-ui/icons/Cached';
-import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import CodeIcon from '@material-ui/icons/Code';
 import ExtensionIcon from '@material-ui/icons/Extension';
 import InfoIcon from '@material-ui/icons/Info';
@@ -40,7 +39,6 @@ import getStaticGlobal from '../../helpers/get-static-global';
 import getWorkspaceFriendlyName from '../../helpers/get-workspace-friendly-name';
 
 import SectionAbout from './section-about';
-import SectionAccountLicensing from './section-account-licensing';
 import SectionAppLock from './section-app-lock';
 import SectionAudioVideo from './section-audio-video';
 import SectionAutoReload from './section-auto-reload';
@@ -57,7 +55,6 @@ import SectionHome from './section-home';
 import SectionLanguage from './section-language';
 import SectionLinkHandling from './section-link-handling';
 import SectionMode from './section-mode';
-import SectionMoreApps from './section-more-apps';
 import SectionNetwork from './section-network';
 import SectionNotifications from './section-notifications';
 import SectionPerformance from './section-performance';
