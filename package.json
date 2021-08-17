@@ -8,9 +8,10 @@
   },
   "main": "main-src/electron.js",
   "scripts": {
-    "postinstall": "npx patch-package && electron-builder install-app-deps && yarn generate-open-source-notices",
+    "postinstall": "npx patch-package && electron-builder install-app-deps && yarn rebuild && yarn generate-open-source-notices",
     "generate-open-source-notices": "yarn licenses generate-disclaimer > public/open-source-notices-automated.txt",
     "build": "react-scripts build && webpack",
+    "rebuild": "npm rebuild --runtime=electron --target=13.1.7 --disturl=https://atom.io/download/atom-shell --abi=89",
     "webpack": "webpack",
     "eject": "react-scripts eject",
     "lint": "eslint ./main-src ./src ./build-*.js --ext js",
@@ -29,7 +30,8 @@
   "author": "WebCatalog Ltd <contact@webcatalog.app>",
   "dependencies": {
     "keytar": "7.7.0",
-    "node-mac-permissions": "2.2.0"
+    "node-mac-permissions": "2.2.0",
+    "robotjs": "^0.6.0"
   },
   "devDependencies": {
     "@cliqz/adblocker-electron": "1.22.4",
